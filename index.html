@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dimension Lab - Tienda online de Impresión 3D de todo tipo. Arte, Moda, Joyería, Casa, Juegos y Diseños Personalizados en PLA, PETG y Resina de alta calidad.">
+  <title>Dimension Lab | Impresiones 3D de Todo Tipo - Tienda Online</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Media/0001.png">
+  
+  <!-- Google Fonts: Oswald & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome CDN for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-item">
+        <i class="fa-solid fa-truck-fast"></i>
+        <span>Envíos a todo el país</span>
+      </div>
+      <div class="top-bar-divider">|</div>
+      <div class="top-bar-item">
+        <i class="fa-solid fa-cube"></i>
+        <span>Impresiones en PLA, Resina y PETG de alta calidad</span>
+      </div>
+      <div class="top-bar-divider">|</div>
+      <div class="top-bar-item highlight-whatsapp">
+        <i class="fa-regular fa-comment-dots"></i>
+        <span>¿Necesitas una impresión personalizada? <a href="https://wa.me/573000000000?text=Hola%20Dimension%20Lab,%20necesito%20una%20impresi%C3%B3n%20personalizada" target="_blank" rel="noopener">Escríbenos por WhatsApp</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      
+      <!-- Left: Brand Logo -->
+      <div class="header-left">
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menú de navegación">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="#" class="brand-link" title="Dimension Lab - Inicio">
+          <div class="brand-logo-card">
+            <img src="Media/0001.png" alt="Dimension Lab Logo" class="brand-logo-img">
+          </div>
+          <div class="brand-identity">
+            <span class="brand-name">DIMENSION LAB</span>
+            <span class="brand-subtitle">IMPRESIONES 3D</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Center: Main Navigation & Megamenu -->
+      <nav class="header-center main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#inicio" class="nav-link active">INICIO</a>
+          </li>
+
+          <!-- Megamenu Dropdown -->
+          <li class="nav-item has-megamenu" id="categories-menu-item">
+            <a href="#catalogo" class="nav-link dropdown-toggle" id="megamenu-btn">
+              CATÁLOGO <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+            <!-- Megamenu Container -->
+            <div class="megamenu-panel" id="megamenu-panel">
+              <div class="megamenu-grid">
+                
+                <!-- Category 1: Arte -->
+                <a href="#catalogo" class="megamenu-card" data-category="arte">
+                  <div class="category-icon-bubble">
+                    <span class="emoji">🎨</span>
+                  </div>
+                  <div class="megamenu-info">
+                    <h4 class="category-title">ARTE</h4>
+                    <p class="category-desc">Esculturas, figuras decorativas, cuadros 3D con relieve y bustos artísticos.</p>
+                  </div>
+                  <span class="megamenu-link-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <!-- Category 2: Moda -->
+                <a href="#catalogo" class="megamenu-card" data-category="moda">
+                  <div class="category-icon-bubble">
+                    <span class="emoji">👗</span>
+                  </div>
+                  <div class="megamenu-info">
+                    <h4 class="category-title">MODA</h4>
+                    <p class="category-desc">Accesorios portables, prendas interactivas, hebillas, bolsos y calzado impreso.</p>
+                  </div>
+                  <span class="megamenu-link-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <!-- Category 3: Joyas -->
+                <a href="#catalogo" class="megamenu-card" data-category="joyas">
+                  <div class="category-icon-bubble">
+                    <span class="emoji">💎</span>
+                  </div>
+                  <div class="megamenu-info">
+                    <h4 class="category-title">JOYAS</h4>
+                    <p class="category-desc">Anillos paramétricos, pendientes geométricos, dijes en resina castable y filamento fino.</p>
+                  </div>
+                  <span class="megamenu-link-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <!-- Category 4: Casa -->
+                <a href="#catalogo" class="megamenu-card" data-category="casa">
+                  <div class="category-icon-bubble">
+                    <span class="emoji">🏠</span>
+                  </div>
+                  <div class="megamenu-info">
+                    <h4 class="category-title">CASA</h4>
+                    <p class="category-desc">Muebles en miniatura, macetas autorregables, organizadores modulares y lámparas litofanía.</p>
+                  </div>
+                  <span class="megamenu-link-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <!-- Category 5: Juegos -->
+                <a href="#catalogo" class="megamenu-card" data-category="juegos">
+                  <div class="category-icon-bubble">
+                    <span class="emoji">🎮</span>
+                  </div>
+                  <div class="megamenu-info">
+                    <h4 class="category-title">JUEGOS</h4>
+                    <p class="category-desc">Juegos de mesa, piezas de rol D&D, rompecabezas mecánicos y coleccionables.</p>
+                  </div>
+                  <span class="megamenu-link-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <!-- Category 6: Variados -->
+                <a href="#catalogo" class="megamenu-card" data-category="variados">
+                  <div class="category-icon-bubble">
+                    <span class="emoji">📦</span>
+                  </div>
+                  <div class="megamenu-info">
+                    <h4 class="category-title">VARIADOS</h4>
+                    <p class="category-desc">Gadgets de escritorio, repuestos mecánicos, llaveros y personalizaciones a medida.</p>
+                  </div>
+                  <span class="megamenu-link-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+              </div>
+
+              <!-- Megamenu Footer Feature -->
+              <div class="megamenu-footer-banner">
+                <div class="banner-text">
+                  <span class="banner-badge">FABRICACIÓN A DEMANDA</span>
+                  <p>¿Tienes tu propio archivo .STL o .OBJ? Imprimimos tus modelos con precisión micrónica.</p>
+                </div>
+                <a href="#cotizador" class="btn btn-action-sm">COTIZAR ARCHIVO 3D</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="#cotizador" class="nav-link">COTIZADOR 3D</a>
+          </li>
+          <li class="nav-item">
+            <a href="#materiales" class="nav-link">MATERIALES</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacto" class="nav-link">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Right: Tools, Account & Cart -->
+      <div class="header-right">
+        <!-- Search Button -->
+        <button class="tool-btn" id="open-search-btn" title="Buscar productos" aria-label="Buscar productos">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="tool-text">BUSCAR</span>
+        </button>
+
+        <!-- Order Tracking Button -->
+        <button class="tool-btn" id="open-account-btn" title="Rastrear Pedido" aria-label="Rastrear Pedido">
+          <i class="fa-solid fa-truck-fast"></i>
+          <span class="tool-text">RASTREAR PEDIDO</span>
+        </button>
+
+        <!-- Shopping Cart Button -->
+        <button class="tool-btn cart-btn" id="open-cart-btn" title="Carrito de Compras" aria-label="Carrito de Compras">
+          <div class="cart-icon-wrapper">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-counter" id="cart-counter">0</span>
+          </div>
+          <span class="tool-text cart-total-text" id="cart-header-total">$0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay & Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-overlay"></div>
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-link">
+        <div class="brand-logo-card">
+          <img src="Media/0001.png" alt="Dimension Lab" class="brand-logo-img">
+        </div>
+        <div class="brand-identity">
+          <span class="brand-name">DIMENSION LAB</span>
+          <span class="brand-subtitle">IMPRESIONES 3D</span>
+        </div>
+      </div>
+      <button class="close-drawer-btn" id="close-mobile-drawer" aria-label="Cerrar menú">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="mobile-drawer-body">
+      <div class="mobile-search-box">
+        <input type="text" id="mobile-search-input" placeholder="Buscar arte, moda, repuestos...">
+        <button id="mobile-search-submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="#inicio" class="mobile-link"><i class="fa-solid fa-house"></i> INICIO</a>
+        <div class="mobile-accordion">
+          <button class="mobile-accordion-toggle" id="mobile-categories-toggle">
+            <span><i class="fa-solid fa-layer-group"></i> CATEGORÍAS</span>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+          </button>
+          <div class="mobile-accordion-content" id="mobile-categories-content">
+            <a href="#catalogo" class="mobile-sublink" data-cat="arte">🎨 Arte (esculturas, cuadros 3D)</a>
+            <a href="#catalogo" class="mobile-sublink" data-cat="moda">👗 Moda (accesorios, prendas)</a>
+            <a href="#catalogo" class="mobile-sublink" data-cat="joyas">💎 Joyas (anillos, dijes)</a>
+            <a href="#catalogo" class="mobile-sublink" data-cat="casa">🏠 Casa (macetas, lámparas)</a>
+            <a href="#catalogo" class="mobile-sublink" data-cat="juegos">🎮 Juegos (rol, rompecabezas)</a>
+            <a href="#catalogo" class="mobile-sublink" data-cat="variados">📦 Variados (gadgets, repuestos)</a>
+          </div>
+        </div>
+        <a href="#cotizador" class="mobile-link"><i class="fa-solid fa-calculator"></i> COTIZADOR 3D</a>
+        <a href="#materiales" class="mobile-link"><i class="fa-solid fa-microscope"></i> MATERIALES & TECNOLOGÍA</a>
+        <a href="#contacto" class="mobile-link"><i class="fa-solid fa-envelope"></i> CONTACTO</a>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <button class="btn btn-primary btn-block" id="mobile-account-btn">
+          <i class="fa-solid fa-truck-fast"></i> RASTREAR PEDIDO
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="inicio">
+    <div class="hero-bg-mesh"></div>
+    <div class="container hero-container">
+      
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>IMPRESIÓN 3D PROFESIONAL & DISEÑO A MEDIDA</span>
+        </div>
+        
+        <h1 class="hero-title">
+          TRANSFORMA TUS IDEAS EN <span class="text-primary">OBJETOS REALES</span>
+        </h1>
+        
+        <p class="hero-description">
+          En <strong>Dimension Lab</strong> fabricamos piezas únicas con tecnología aditiva de vanguardia en <strong>PLA ecológico, Resina UV de alta definición y PETG industrial</strong>. Explora nuestro catálogo de diseño o envíanos tus propios modelos 3D para fabricación inmediata.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#catalogo" class="btn btn-action btn-lg">
+            <i class="fa-solid fa-bag-shopping"></i> EXPLORAR CATÁLOGO
+          </a>
+          <a href="#cotizador" class="btn btn-outline btn-lg">
+            <i class="fa-solid fa-cube"></i> COTIZAR MODELO PERSONALIZADO
+          </a>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="hero-stat">
+            <span class="stat-number">+8,500</span>
+            <span class="stat-label">Piezas Impresas</span>
+          </div>
+          <div class="stat-separator"></div>
+          <div class="hero-stat">
+            <span class="stat-number">0.05 mm</span>
+            <span class="stat-label">Resolución Micrónica</span>
+          </div>
+          <div class="stat-separator"></div>
+          <div class="hero-stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Garantía de Calidad</span>
+          </div>
+          <div class="stat-separator"></div>
+          <div class="hero-stat">
+            <span class="stat-number">24/72h</span>
+            <span class="stat-label">Tiempo de Fabricación</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual 3D Showcase Card -->
+      <div class="hero-visual">
+        <div class="showcase-card">
+          <div class="showcase-glow"></div>
+          <div class="showcase-tag">
+            <i class="fa-solid fa-award"></i> PIEZA DESTACADA
+          </div>
+          <div class="showcase-img-container">
+            <div class="printer-nozzle-badge">
+              <i class="fa-solid fa-gem"></i> Resina 8K Ultra Definición
+            </div>
+            <img src="Media/Portafolio/Art/Spartan 0001.webp" alt="Diorama Escultórico This is Sparta" class="showcase-img" id="hero-showcase-img">
+          </div>
+          
+          <div class="showcase-details">
+            <div class="showcase-meta">
+              <span class="showcase-cat">ARTE & ESCULTURA 3D</span>
+              <div class="showcase-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5.0)</span>
+              </div>
+            </div>
+            <h3 class="showcase-name">Diorama Escultórico "This is Sparta"</h3>
+            <p class="showcase-excerpt">Pieza maestra de coleccionista inspirada en las Termópilas. Máxima definición de capas en Resina 8K con acabado artesanal.</p>
+            
+            <div class="showcase-pricing-row">
+              <div class="price-box">
+                <span class="price-currency">$</span>
+                <span class="price-amount">115.000</span>
+                <span class="price-label">COP / ~$28 USD</span>
+              </div>
+              <button class="btn btn-action-sm add-to-cart-quick" data-id="1" data-name="Diorama Escultórico This is Sparta" data-price="115000" data-img="Media/Portafolio/Art/Spartan 0001.webp" data-category="Arte">
+                <i class="fa-solid fa-cart-plus"></i> AÑADIR
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="section categories-section" id="categorias">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge">EXPLORA POR ESPECIALIDAD</span>
+        <h2 class="section-title">CATEGORÍAS DE IMPRESIÓN</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">
+          Desde arte escultural hasta repuestos de precisión mecánica. Diseños listos para ordenar o personalizar.
+        </p>
+      </div>
+
+      <div class="categories-grid">
+        <!-- Card 1: Arte -->
+        <div class="category-box" data-filter="arte">
+          <div class="cat-box-banner">
+            <span class="cat-emoji">🎨</span>
+            <span class="cat-badge-material">Resina & PLA</span>
+          </div>
+          <div class="cat-box-content">
+            <h3 class="cat-name">ARTE</h3>
+            <p class="cat-details">Esculturas contemporáneas, figuras decorativas para interiores, cuadros 3D texturizados y bustos de colección.</p>
+            <ul class="cat-feature-list">
+              <li><i class="fa-solid fa-check"></i> Esculturas poliédricas</li>
+              <li><i class="fa-solid fa-check"></i> Paneles de pared en alto relieve</li>
+              <li><i class="fa-solid fa-check"></i> Figuras de autor exclusivas</li>
+            </ul>
+            <a href="#catalogo" class="cat-action-link" data-filter="arte">
+              Ver Colección Arte <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Moda -->
+        <div class="category-box" data-filter="moda">
+          <div class="cat-box-banner">
+            <span class="cat-emoji">👗</span>
+          </div>
+          <div class="cat-box-content">
+            <h3 class="cat-name">MODA</h3>
+            <p class="cat-details">Accesorios de diseño portable, hebillas paramétricas, piezas textiles impresas en TPU flexible y calzado experimental.</p>
+            <ul class="cat-feature-list">
+              <li><i class="fa-solid fa-check"></i> Bolsos geométricos estructurados</li>
+              <li><i class="fa-solid fa-check"></i> Armazones y accesorios ópticos</li>
+              <li><i class="fa-solid fa-check"></i> Prendas con uniones flexibles</li>
+            </ul>
+            <a href="#catalogo" class="cat-action-link" data-filter="moda">
+              Ver Colección Moda <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Joyas -->
+        <div class="category-box" data-filter="joyas">
+          <div class="cat-box-banner">
+            <span class="cat-emoji">💎</span>
+            <span class="cat-badge-material">Ultra Detalle 8K</span>
+          </div>
+          <div class="cat-box-content">
+            <h3 class="cat-name">JOYAS</h3>
+            <p class="cat-details">Anillos algorítmicos, pendientes ligeros, dijes hipoalergénicos y modelos castables para fundición en oro y plata.</p>
+            <ul class="cat-feature-list">
+              <li><i class="fa-solid fa-check"></i> Anillos matemáticos Voronoi</li>
+              <li><i class="fa-solid fa-check"></i> Pendientes de peso pluma</li>
+              <li><i class="fa-solid fa-check"></i> Resinas colables para orfebres</li>
+            </ul>
+            <a href="#catalogo" class="cat-action-link" data-filter="joyas">
+              Ver Colección Joyas <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4: Casa -->
+        <div class="category-box" data-filter="casa">
+          <div class="cat-box-banner">
+            <span class="cat-emoji">🏠</span>
+          </div>
+          <div class="cat-box-content">
+            <h3 class="cat-name">CASA</h3>
+            <p class="cat-details">Diseño funcional para el hogar: muebles miniatura, macetas autorregables, organizadores modulares y lámparas con litofanías.</p>
+            <ul class="cat-feature-list">
+              <li><i class="fa-solid fa-check"></i> Lámparas lunares personalizadas</li>
+              <li><i class="fa-solid fa-check"></i> Macetas y jardineras nórdicas</li>
+              <li><i class="fa-solid fa-check"></i> Organizadores de cable y escritorio</li>
+            </ul>
+            <a href="#catalogo" class="cat-action-link" data-filter="casa">
+              Ver Colección Casa <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 5: Juegos -->
+        <div class="category-box" data-filter="juegos">
+          <div class="cat-box-banner">
+            <span class="cat-emoji">🎮</span>
+            <span class="cat-badge-material">Máximo Detalle</span>
+          </div>
+          <div class="cat-box-content">
+            <h3 class="cat-name">JUEGOS</h3>
+            <p class="cat-details">Piezas de alta precisión para juegos de mesa, miniaturas Dungeons & Dragons, rompecabezas mecánicos y coleccionables.</p>
+            <ul class="cat-feature-list">
+              <li><i class="fa-solid fa-check"></i> Miniaturas de rol en Resina HD</li>
+              <li><i class="fa-solid fa-check"></i> Torres de dados personalizadas</li>
+              <li><i class="fa-solid fa-check"></i> Insertos organizadores de cajas</li>
+            </ul>
+            <a href="#catalogo" class="cat-action-link" data-filter="juegos">
+              Ver Colección Juegos <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 6: Variados -->
+        <div class="category-box" data-filter="variados">
+          <div class="cat-box-banner">
+            <span class="cat-emoji">📦</span>
+          </div>
+          <div class="cat-box-content">
+            <h3 class="cat-name">VARIADOS</h3>
+            <p class="cat-details">Gadgets ingeniosos, repuestos descatalogados para electrodomésticos, llaveros personalizados y soluciones técnicas a medida.</p>
+            <ul class="cat-feature-list">
+              <li><i class="fa-solid fa-check"></i> Repuestos mecánicos en PETG</li>
+              <li><i class="fa-solid fa-check"></i> Soportes ergonómicos de celular</li>
+              <li><i class="fa-solid fa-check"></i> Llaveros corporativos y souvenirs</li>
+            </ul>
+            <a href="#catalogo" class="cat-action-link" data-filter="variados">
+              Ver Colección Variados <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Products Catalog -->
+  <section class="section catalog-section" id="catalogo">
+    <div class="container">
+      
+      <div class="section-header text-center">
+        <span class="section-badge">TIENDA ONLINE</span>
+        <h2 class="section-title">CATÁLOGO DE PRODUCTOS DESTACADOS</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">
+          Selecciona una categoría o material para filtrar los modelos disponibles con entrega garantizada.
+        </p>
+      </div>
+
+      <!-- Filters Toolbar -->
+      <div class="catalog-filters-toolbar">
+        <div class="category-filters" id="category-filters">
+          <button class="filter-chip active" data-category="all">Todos</button>
+          <button class="filter-chip" data-category="arte">🎨 Arte</button>
+          <button class="filter-chip" data-category="moda">👗 Moda</button>
+          <button class="filter-chip" data-category="joyas">💎 Joyas</button>
+          <button class="filter-chip" data-category="casa">🏠 Casa</button>
+          <button class="filter-chip" data-category="juegos">🎮 Juegos</button>
+          <button class="filter-chip" data-category="variados">📦 Variados</button>
+        </div>
+
+        <div class="filter-secondary">
+          <label for="material-select" class="filter-label"><i class="fa-solid fa-filter"></i> Material:</label>
+          <select id="material-select" class="form-select-sm">
+            <option value="all">Todos los materiales</option>
+            <option value="Resina">Resina Fotopolimérica 8K</option>
+            <option value="PLA">PLA Biodegradable</option>
+            <option value="PETG">PETG Alta Resistencia</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Product Cards Grid -->
+      <div class="products-grid" id="products-grid">
+        <!-- Products will be dynamically populated and interactive -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Custom 3D Printing Estimator / Cotizador Section -->
+  <section class="section custom-quote-section" id="cotizador">
+    <div class="container">
+      <div class="quote-card">
+        
+        <div class="quote-info">
+          <span class="section-badge">SERVICIO DE FABRICACIÓN PERSONALIZADA</span>
+          <h2 class="quote-title">¿TIENES UN MODELO 3D EN MENTE O UN ARCHIVO .STL?</h2>
+          <p class="quote-description">
+            Fabricamos tus ideas desde cero o imprimimos tus archivos descargados (Thingiverse, Printables, Thangs, Cults3D). Selecciona los parámetros de tu proyecto y recibe una cotización inmediata con asesoría técnica para optimizar la resistencia y costo de tu pieza.
+          </p>
+
+          <div class="quote-perks">
+            <div class="quote-perk-item">
+              <i class="fa-solid fa-microchip"></i>
+              <div>
+                <strong>Revisión de Malla 3D Gratis:</strong>
+                <span>Verificamos que el archivo no tenga errores de slicer o paredes flotantes.</span>
+              </div>
+            </div>
+            <div class="quote-perk-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <strong>Confidencialidad Garantizada:</strong>
+                <span>Tus diseños y patentes industriales están protegidos bajo estricto acuerdo NDA.</span>
+              </div>
+            </div>
+            <div class="quote-perk-item">
+              <i class="fa-solid fa-truck-ramp-box"></i>
+              <div>
+                <strong>Envío Seguro con Empaque Antichoque:</strong>
+                <span>Protegemos hasta las partes más frágiles con burbuja de aire y caja rígida.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Estimator Form -->
+        <div class="quote-calculator-box">
+          <h3 class="calc-title"><i class="fa-solid fa-sliders"></i> ESTIMADOR DE COSTO 3D</h3>
+          <p class="calc-subtitle">Configura los parámetros de impresión aproximados:</p>
+
+          <form id="quote-form" onsubmit="event.preventDefault(); submitCustomQuote();">
+            
+            <div class="form-group">
+              <label for="quote-material" class="form-label">Material de Impresión:</label>
+              <select id="quote-material" class="form-input" required>
+                <option value="PLA" selected>PLA+ Bio-friendly (Decorativo y Rápido)</option>
+                <option value="PETG">PETG Industrial (Resistente al calor y exterior)</option>
+                <option value="Resina">Resina Fotopolimérica 8K (Máximo detalle microscópico)</option>
+              </select>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="quote-size" class="form-label">Tamaño Estimado:</label>
+                <select id="quote-size" class="form-input">
+                  <option value="small">Pequeño (< 8 cm)</option>
+                  <option value="medium" selected>Medio (8 a 16 cm)</option>
+                  <option value="large">Grande (16 a 25 cm)</option>
+                  <option value="extra">Extra Grande (> 25 cm)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="quote-infill" class="form-label">Relleno / Densidad:</label>
+                <select id="quote-infill" class="form-input">
+                  <option value="15">15% - Decorativo Ligero</option>
+                  <option value="40" selected>40% - Resistencia Normal</option>
+                  <option value="80">80% - Mecánico Pesado</option>
+                  <option value="100">100% - Sólido Total</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="quote-notes" class="form-label">Detalles del proyecto o link de archivo (.STL, .OBJ):</label>
+              <textarea id="quote-notes" class="form-input" rows="2" placeholder="Ej: Llavero de 6cm, color turquesa, con logo en relieve..."></textarea>
+            </div>
+
+            <div class="estimator-result-card">
+              <div class="result-row">
+                <span class="result-label">Costo Estimado Base:</span>
+                <span class="result-price" id="calc-estimated-price">$38.000 COP (~$9.5 USD)</span>
+              </div>
+              <div class="result-row">
+                <span class="result-label">Tiempo estimado de impresión:</span>
+                <span class="result-time" id="calc-estimated-time">~5 a 8 horas</span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-action btn-block">
+              <i class="fa-brands fa-whatsapp"></i> COTIZAR CON ASESOR POR WHATSAPP
+            </button>
+            <p class="calc-foot-note text-center">
+              * El precio definitivo se calcula tras analizar el peso en gramos y soportes en el software Slicer.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Materials & Technology Section -->
+  <section class="section materials-section" id="materiales">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge">TECNOLOGÍA & FABRICACIÓN</span>
+        <h2 class="section-title">NUESTROS MATERIALES DE IMPRESIÓN</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">
+          Elegimos cuidadosamente cada polímero para garantizar la mayor durabilidad, acabado estético y fidelidad de capa.
+        </p>
+      </div>
+
+      <div class="materials-grid">
+        <!-- Material 1: Resina -->
+        <div class="material-card">
+          <div class="material-header">
+            <span class="material-badge-action">ALTA RESOLUCIÓN</span>
+            <i class="fa-solid fa-gem material-icon"></i>
+            <h3 class="material-name">RESINA FOTOPOLIMÉRICA 8K</h3>
+            <span class="material-tech">Tecnología MSLA / LCD</span>
+          </div>
+          <div class="material-body">
+            <p class="material-desc">
+              Ideal para miniaturas de rol, joyería, réplicas anatómicas y piezas de arte donde las líneas de capa son imperceptibles a simple vista.
+            </p>
+            <div class="spec-bar-group">
+              <div class="spec-bar-label"><span>Nivel de Detalle:</span> <strong>99%</strong></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 99%;"></div></div>
+            </div>
+            <div class="spec-bar-group">
+              <div class="spec-bar-label"><span>Suavidad Superficial:</span> <strong>98%</strong></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 98%;"></div></div>
+            </div>
+            <div class="spec-bar-group">
+              <div class="spec-bar-label"><span>Resistencia al Impacto:</span> <strong>70%</strong></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Material 2: PLA+ -->
+        <div class="material-card">
+          <div class="material-header">
+            <span class="material-badge-action">ECOLÓGICO & VERSÁTIL</span>
+            <i class="fa-solid fa-leaf material-icon"></i>
+            <h3 class="material-name">PLA+ PREMIUM BIODEGRADABLE</h3>
+            <span class="material-tech">Tecnología FDM / FFF</span>
+          </div>
+          <div class="material-body">
+            <p class="material-desc">
+              Polímero derivado de recursos renovables (almidón de maíz). Acabado vibrante, excelente estabilidad dimensional y libre de olores tóxicos.
+            </p>
+            <div class="spec-bar-group">
+              <div class="spec-bar-label"><span>Sostenibilidad:</span> <strong>95%</strong></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
+            </div>
+            <div class="spec-bar-group">
+              <div class="spec-bar-label"><span>Gama de Colores:</span> <strong>96%</strong></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 96%;"></div></div>
+            </div>
+            <div class="spec-bar-group">
+              <div class="spec-bar-label"><span>Rigidez Estructural:</span> <strong>85%</strong></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Material 3: PETG -->
+        <div class="material-card">
+          <div class="material-header">
+            <span class="material-badge-action">GRADO MECÁNICO</span>
+            <i class="fa-solid fa-gear material-icon"></i>
+            <h3 class="material-name">PETG DE ALTA RESISTENCIA</h3>
+            <span class="material-tech">Tecnología FDM / FFF</span>
+          </div>
+          <div class="material-body">
+            <p class="material-desc">
+              Excelente tenacidad y resistencia térmica y química. El material predilecto para repuestos de maquinaria, gadgets de exterior y piezas con esfuerzo mecánico.
+            </p>
+            <div class="spec-bar-group">
+              <div class="spec-bar-label"><span>Resistencia Térmica:</span> <strong>92%</strong></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 92%;"></div></div>
+            </div>
+            <div class="spec-bar-group">
+              <div class="spec-bar-label"><span>Durabilidad Exterior:</span> <strong>94%</strong></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 94%;"></div></div>
+            </div>
+            <div class="spec-bar-group">
+              <div class="spec-bar-label"><span>Flexibilidad / Ductilidad:</span> <strong>88%</strong></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Trust & Guarantee Highlights Section -->
+  <section class="section guarantee-section">
+    <div class="container">
+      <div class="guarantee-grid">
+        <div class="guarantee-item">
+          <div class="guarantee-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+          <h4 class="guarantee-title">ENVÍOS SEGUROS A TODO EL PAÍS</h4>
+          <p class="guarantee-text">Despachos rápidos y asegurados con seguimiento en tiempo real vía Servientrega, Coordinadora y Envía.</p>
+        </div>
+        <div class="guarantee-item">
+          <div class="guarantee-icon"><i class="fa-solid fa-award"></i></div>
+          <h4 class="guarantee-title">GARANTÍA DE FABRICACIÓN 100%</h4>
+          <p class="guarantee-text">Si tu pieza presenta algún defecto de impresión o se daña durante el transporte, la reimprimimos sin costo adicional.</p>
+        </div>
+        <div class="guarantee-item">
+          <div class="guarantee-icon"><i class="fa-solid fa-lock"></i></div>
+          <h4 class="guarantee-title">TRANSACCIONES 100% CIFRADAS</h4>
+          <p class="guarantee-text">Procesamiento seguro a través de Mercado Pago, Wompi, PayU y Bold con encriptación bancaria SSL de 256 bits.</p>
+        </div>
+        <div class="guarantee-item">
+          <div class="guarantee-icon"><i class="fa-solid fa-headset"></i></div>
+          <h4 class="guarantee-title">ASESORÍA TÉCNICA ESPECIALIZADA</h4>
+          <p class="guarantee-text">Te ayudamos a elegir el mejor material, orientación y relleno para maximizar la calidad y optimizar tu presupuesto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews / Testimonials -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge">TESTIMONIOS REALES</span>
+        <h2 class="section-title">LO QUE OPINAN NUESTROS CLIENTES</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">
+          Creadores, coleccionistas, joyeros y entusiastas de toda la región confían en Dimension Lab.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars-row">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-quote">
+            "Mande a imprimir una tanda de miniaturas para mi campaña de D&D en resina 8K. Los detalles de las armaduras y expresiones faciales son impresionantes. ¡Llegaron perfectamente embaladas!"
+          </p>
+          <div class="author-info">
+            <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+            <div>
+              <h5 class="author-name">Santiago Morales</h5>
+              <span class="author-tag">Coleccionista & Master de Rol</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars-row">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-quote">
+            "Excelente servicio en piezas de joyería. Probamos los prototipos en resina para moldes y la precisión dimensional fue perfecta. Nos ahorraron semanas de modelado tradicional."
+          </p>
+          <div class="author-info">
+            <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+            <div>
+              <h5 class="author-name">Camila Restrepo</h5>
+              <span class="author-tag">Diseñadora de Joyas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars-row">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-quote">
+            "Se me rompió un engranaje de una batidora antigua que ya no se consigue en el mercado. Envíe las medidas y me imprimieron el repuesto en PETG. Funciona como nueva. ¡10/10!"
+          </p>
+          <div class="author-info">
+            <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+            <div>
+              <h5 class="author-name">Carlos Andrés V.</h5>
+              <span class="author-tag">Cliente Particular</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section class="section contact-section" id="contacto">
+    <div class="container">
+      <div class="contact-box">
+        <div class="contact-info-col">
+          <span class="section-badge">HABLA CON NOSOTROS</span>
+          <h2 class="contact-title">¿TIENES DUDAS O UN PROYECTO A GRAN ESCALA?</h2>
+          <p class="contact-text">
+            Estamos listos para asesorarte en fabricación por lotes, prototipado rápido, modelado 3D y regalos corporativos personalizados.
+          </p>
+          
+          <div class="contact-methods-list">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <strong>WhatsApp Directo:</strong>
+                <a href="https://wa.me/573000000000?text=Hola%20Dimension%20Lab,%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener">+57 300 000 0000</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong>Correo Electrónico:</strong>
+                <a href="mailto:contacto@dimensionlab3d.com">contacto@dimensionlab3d.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <strong>Horario de Atención:</strong>
+                <span>Lunes a Sábado: 8:00 AM - 7:00 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-col">
+          <form id="general-contact-form" onsubmit="event.preventDefault(); submitGeneralContact();">
+            <h4 class="form-title">ENVIAR UN MENSAJE</h4>
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Nombre Completo:</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Correo Electrónico:</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="ejemplo@correo.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Asunto:</label>
+              <input type="text" id="contact-subject" class="form-input" placeholder="Cotización, duda sobre catálogo, etc." required>
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Mensaje:</label>
+              <textarea id="contact-message" class="form-input" rows="3" placeholder="Describe brevemente tus requerimientos..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-action btn-block">
+              <i class="fa-solid fa-paper-plane"></i> ENVIAR CONSULTA
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer (Fulfilling all Section C requirements) -->
+  <footer class="site-footer">
+    
+    <!-- Mandatory Banner specified in MD doc -->
+    <div class="footer-highlight-bar">
+      <div class="container footer-highlight-content">
+        <div class="highlight-item">
+          <i class="fa-solid fa-truck"></i>
+          <span>Envíos a todo el país</span>
+        </div>
+        <div class="highlight-separator">|</div>
+        <div class="highlight-item">
+          <i class="fa-solid fa-cube"></i>
+          <span>Impresiones en PLA, Resina y PETG de alta calidad</span>
+        </div>
+        <div class="highlight-separator">|</div>
+        <div class="highlight-item highlight-cta">
+          <i class="fa-regular fa-comment"></i>
+          <span>¿Necesitas una impresión personalizada? <a href="https://wa.me/573000000000?text=Hola%20Dimension%20Lab,%20necesito%20una%20impresi%C3%B3n%20personalizada" target="_blank" rel="noopener">Escríbenos por WhatsApp</a></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Footer Body -->
+    <div class="footer-main-body">
+      <div class="container footer-grid">
+        
+        <!-- Column 1: Brand Info -->
+        <div class="footer-col brand-col">
+          <div class="footer-brand">
+            <div class="footer-logo-card">
+              <img src="Media/0001.png" alt="Dimension Lab" class="footer-logo-img">
+            </div>
+            <div class="brand-identity">
+              <span class="footer-brand-name">DIMENSION LAB</span>
+              <span class="footer-brand-sub">IMPRESIONES 3D DE TODO TIPO</span>
+            </div>
+          </div>
+          <p class="footer-about-text">
+            Taller especializado en modelado, prototipado rápido y fabricación aditiva para entusiastas, diseñadores y empresas en todo el país.
+          </p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="TikTok" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://wa.me/573000000000" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Tienda / Categorías -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">CATEGORÍAS DE TIENDA</h4>
+          <ul class="footer-menu">
+            <li><a href="#catalogo" data-cat="arte"><i class="fa-solid fa-angle-right"></i> Arte y Esculturas 3D</a></li>
+            <li><a href="#catalogo" data-cat="moda"><i class="fa-solid fa-angle-right"></i> Moda y Accesorios</a></li>
+            <li><a href="#catalogo" data-cat="joyas"><i class="fa-solid fa-angle-right"></i> Joyas y Pendientes</a></li>
+            <li><a href="#catalogo" data-cat="casa"><i class="fa-solid fa-angle-right"></i> Hogar, Macetas y Lámparas</a></li>
+            <li><a href="#catalogo" data-cat="juegos"><i class="fa-solid fa-angle-right"></i> Juegos de Mesa y Miniaturas</a></li>
+            <li><a href="#catalogo" data-cat="variados"><i class="fa-solid fa-angle-right"></i> Variados, Gadgets y Repuestos</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Legal & Políticas (MD doc requirement C) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">TÉRMINOS Y POLÍTICAS LEGALES</h4>
+          <ul class="footer-menu legal-menu">
+            <li>
+              <button class="footer-link-btn" id="open-privacy-modal-btn">
+                <i class="fa-solid fa-shield-halved"></i> Política de Privacidad y Tratamiento de Datos
+              </button>
+            </li>
+            <li>
+              <button class="footer-link-btn" id="open-terms-modal-btn">
+                <i class="fa-solid fa-file-contract"></i> Términos y Condiciones del Servicio
+              </button>
+            </li>
+            <li>
+              <button class="footer-link-btn" id="open-shipping-modal-btn">
+                <i class="fa-solid fa-truck-moving"></i> Política de Envíos y Devoluciones
+              </button>
+            </li>
+            <li>
+              <button class="footer-link-btn" id="open-faq-modal-btn">
+                <i class="fa-solid fa-circle-question"></i> Preguntas Frecuentes (FAQ 3D)
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter & Pagos Seguros -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">NOVEDADES Y DESCUENTOS</h4>
+          <p class="footer-sub-text">Recibe lanzamientos de nuevos modelos 3D y promociones exclusivas.</p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); submitNewsletter();">
+            <input type="email" id="newsletter-email" placeholder="Ingresa tu correo" required class="newsletter-input">
+            <button type="submit" class="btn btn-action-sm newsletter-btn" aria-label="Suscribirse">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+
+          <div class="secure-payment-badges">
+            <span class="secure-pay-title"><i class="fa-solid fa-lock"></i> Pasarelas de Pago Seguras:</span>
+            <div class="payment-icons-row">
+              <span class="pay-badge">Mercado Pago</span>
+              <span class="pay-badge">Wompi</span>
+              <span class="pay-badge">PayU</span>
+              <span class="pay-badge">Bold</span>
+              <span class="pay-badge">PSE</span>
+              <span class="pay-badge">Nequi</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-content">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> <strong>Dimension Lab</strong>. Impresiones 3D de Todo Tipo. Todos los derechos reservados.
+        </p>
+        <div class="footer-bottom-meta">
+          <span>Diseño para Fabricación Aditiva en PLA, PETG y Resina 8K</span>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/573000000000?text=Hola%20Dimension%20Lab,%20quiero%20consultar%20sobre%20una%20impresi%C3%B3n%203D" class="floating-whatsapp-btn" target="_blank" rel="noopener" title="Escríbenos por WhatsApp" aria-label="WhatsApp Dimension Lab">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">¿Tienes una idea en 3D? Chatea con nosotros</span>
+  </a>
+
+  <!-- ============================================================== -->
+  <!-- MODALS & DRAWERS (INTERACTIVE SECTIONS)                          -->
+  <!-- ============================================================== -->
+
+  <!-- 1. Shopping Cart Drawer (Offcanvas) -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <div class="cart-drawer-title">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>TU CARRITO DE COMPRAS (<span id="cart-drawer-count">0</span>)</span>
+      </div>
+      <button class="cart-drawer-close" id="close-cart-btn" aria-label="Cerrar carrito">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-drawer-body" id="cart-items-container">
+      <!-- Empty state / Items will be populated here -->
+      <div class="empty-cart-state" id="empty-cart-message">
+        <i class="fa-solid fa-basket-shopping empty-icon"></i>
+        <h4>Tu carrito está vacío</h4>
+        <p>Explora nuestras piezas en Arte, Moda, Joyas, Casa y Juegos y añade tus favoritas.</p>
+        <button class="btn btn-action" onclick="closeCart(); location.href='#catalogo';">VER CATÁLOGO</button>
+      </div>
+      <div class="cart-items-list" id="cart-items-list"></div>
+    </div>
+
+    <div class="cart-drawer-footer" id="cart-drawer-footer" style="display: none;">
+      <div class="cart-summary-line">
+        <span>Subtotal:</span>
+        <span class="summary-val" id="cart-subtotal">$0</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>Envío nacional:</span>
+        <span class="summary-val text-success" id="cart-shipping">Calculado en checkout</span>
+      </div>
+      <div class="cart-summary-total">
+        <span>TOTAL ESTIMADO:</span>
+        <span class="total-val" id="cart-grand-total">$0</span>
+      </div>
+
+      <button class="btn btn-action btn-block btn-lg" id="proceed-to-checkout-btn">
+        <i class="fa-solid fa-lock"></i> INICIAR COMPRA SEGURA
+      </button>
+      
+      <p class="cart-secure-notice">
+        <i class="fa-solid fa-shield-check"></i> Transacción cifrada con encriptación SSL de 256 bits.
+      </p>
+    </div>
+  </aside>
+
+  <!-- 2. CHECKOUT MODAL (Fulfilling all Section 2 requirements of MD doc) -->
+  <div class="modal-overlay" id="checkout-modal-overlay">
+    <div class="modal-dialog checkout-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-credit-card text-primary"></i>
+          <h3 class="modal-title">FINALIZAR PEDIDO Y PASARELA DE PAGO</h3>
+        </div>
+        <button class="modal-close-btn" id="close-checkout-modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="modal-body checkout-modal-body">
+        
+        <div class="checkout-layout-grid">
+          
+          <!-- Left: Customer Form & Legal Checkboxes -->
+          <div class="checkout-form-column">
+            <h4 class="checkout-step-title">1. DATOS DE ENTREGA Y FACTURACIÓN</h4>
+            
+            <form id="checkout-form" onsubmit="event.preventDefault(); processCheckoutPayment();">
+              
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="checkout-name" class="form-label">Nombre y Apellidos *</label>
+                  <input type="text" id="checkout-name" class="form-input" placeholder="Ej: Mateo Gómez" required>
+                </div>
+                <div class="form-group">
+                  <label for="checkout-phone" class="form-label">Teléfono Móvil / WhatsApp *</label>
+                  <input type="tel" id="checkout-phone" class="form-input" placeholder="Ej: 310 123 4567" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="checkout-email" class="form-label">Correo Electrónico * (para tracking y confirmación)</label>
+                <input type="email" id="checkout-email" class="form-input" placeholder="tu-correo@ejemplo.com" required>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="checkout-city" class="form-label">Ciudad / Municipio *</label>
+                  <input type="text" id="checkout-city" class="form-input" placeholder="Ej: Medellín / Bogotá" required>
+                </div>
+                <div class="form-group">
+                  <label for="checkout-address" class="form-label">Dirección de Entrega *</label>
+                  <input type="text" id="checkout-address" class="form-input" placeholder="Calle / Carrera / Apto" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="checkout-instructions" class="form-label">Instrucciones Especiales de Impresión / Entrega (Opcional)</label>
+                <input type="text" id="checkout-instructions" class="form-input" placeholder="Ej: Dejar en portería, color personalizado...">
+              </div>
+
+              <h4 class="checkout-step-title" style="margin-top: 1.5rem;">2. MÉTODO DE PAGO</h4>
+              <div class="payment-methods-selector">
+                <label class="payment-method-option active">
+                  <input type="radio" name="pay_gateway" value="mercadopago" checked>
+                  <div class="pay-option-content">
+                    <span class="pay-name"><i class="fa-solid fa-credit-card"></i> Mercado Pago / Tarjetas Débito y Crédito</span>
+                    <span class="pay-sub">Aprobación instantánea sin recargo</span>
+                  </div>
+                </label>
+
+                <label class="payment-method-option">
+                  <input type="radio" name="pay_gateway" value="pse_wompi">
+                  <div class="pay-option-content">
+                    <span class="pay-name"><i class="fa-solid fa-building-columns"></i> Wompi / PSE / Nequi / Bancolombia</span>
+                    <span class="pay-sub">Transferencia bancaria en línea</span>
+                  </div>
+                </label>
+
+                <label class="payment-method-option">
+                  <input type="radio" name="pay_gateway" value="bold_payu">
+                  <div class="pay-option-content">
+                    <span class="pay-name"><i class="fa-solid fa-shield"></i> Bold / PayU Colombia</span>
+                    <span class="pay-sub">Pasarela segura 100% cifrada</span>
+                  </div>
+                </label>
+              </div>
+
+              <!-- ============================================================== -->
+              <!-- MANDATORY SECTION 2 REQUIREMENTS FROM MD doc.md               -->
+              <!-- ============================================================== -->
+              <div class="legal-consent-card">
+                <h5 class="consent-header">TÉRMINOS, PRIVACIDAD Y CONSENTIMIENTOS</h5>
+                
+                <!-- Mandatory Checkbox 1 -->
+                <div class="checkbox-field mandatory-field">
+                  <input type="checkbox" id="terms-acceptance-checkbox" required>
+                  <label for="terms-acceptance-checkbox">
+                    <strong>Acepto los Términos y Condiciones y la Política de Tratamiento de Datos Personales.</strong>
+                    <span class="legal-helper-text">
+                      (Tus datos serán usados exclusivamente para tramitar y despachar tu pedido según la ley de protección de datos).
+                    </span>
+                  </label>
+                </div>
+
+                <!-- Optional Checkbox 2 -->
+                <div class="checkbox-field optional-field">
+                  <input type="checkbox" id="marketing-acceptance-checkbox">
+                  <label for="marketing-acceptance-checkbox">
+                    Deseo recibir ofertas exclusivas, nuevos diseños 3D y novedades por correo electrónico.
+                  </label>
+                </div>
+              </div>
+
+              <!-- Payment Action Button -->
+              <div class="checkout-action-wrap">
+                <button type="submit" class="btn btn-action btn-block btn-lg" id="submit-order-btn">
+                  <i class="fa-solid fa-lock"></i> CONFIRMAR PEDIDO Y PAGAR (<span id="checkout-button-total">$0</span>)
+                </button>
+              </div>
+
+              <!-- ============================================================== -->
+              <!-- MANDATORY SECTION B: SECURITY GUARANTEE TEXT UNDER FORM        -->
+              <!-- ============================================================== -->
+              <div class="security-guarantee-notice">
+                <div class="sec-notice-icon">
+                  <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="sec-notice-text">
+                  <strong class="sec-title">🔒 Transacción 100% Segura</strong>
+                  <p class="sec-desc">
+                    Tus datos personales y bancarios están protegidos. No almacenamos la información de tus tarjetas de crédito. Toda la transacción se procesa de forma cifrada mediante [Mercado Pago, Wompi, PayU y Bold].
+                  </p>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Right: Order Items Summary -->
+          <div class="checkout-summary-column">
+            <div class="order-summary-box">
+              <h4 class="summary-box-title">RESUMEN DEL PEDIDO</h4>
+              <div class="summary-items-list" id="checkout-summary-items">
+                <!-- Dynamically injected items -->
+              </div>
+
+              <div class="summary-calculation">
+                <div class="calc-line">
+                  <span>Subtotal productos:</span>
+                  <span id="checkout-summary-subtotal">$0</span>
+                </div>
+                <div class="calc-line">
+                  <span>Envío a domicilio:</span>
+                  <span id="checkout-summary-shipping" class="text-success">$12.000 COP</span>
+                </div>
+                <div class="calc-divider"></div>
+                <div class="calc-line total-line">
+                  <span>TOTAL A PAGAR:</span>
+                  <span id="checkout-summary-total">$0</span>
+                </div>
+              </div>
+
+              <div class="printing-time-badge">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <div>
+                  <strong>Tiempo estimado de fabricación e impresión:</strong>
+                  <span>24 a 72 horas hábiles tras la confirmación de pago.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. SEARCH MODAL -->
+  <div class="modal-overlay" id="search-modal-overlay">
+    <div class="modal-dialog search-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title"><i class="fa-solid fa-magnifying-glass text-primary"></i> BUSCADOR DE PRODUCTOS 3D</h3>
+        <button class="modal-close-btn" id="close-search-modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="search-input-wrap">
+          <input type="text" id="live-search-input" placeholder="Escribe el nombre del producto, categoría o material (ej: Dragón, Joya, Resina, Maceta)..." autofocus>
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+        <div class="search-suggestions" id="search-suggestions">
+          <span class="sugg-tag" onclick="setQuickSearch('Arte')">Arte 3D</span>
+          <span class="sugg-tag" onclick="setQuickSearch('Joyas')">Joyas</span>
+          <span class="sugg-tag" onclick="setQuickSearch('Resina')">Resina 8K</span>
+          <span class="sugg-tag" onclick="setQuickSearch('Juegos')">Juegos de Rol</span>
+          <span class="sugg-tag" onclick="setQuickSearch('Maceta')">Casa / Macetas</span>
+        </div>
+        <div class="search-results-list" id="search-results-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. RASTREAR PEDIDO MODAL (Sin fricción ni registros) -->
+  <div class="modal-overlay" id="account-modal-overlay">
+    <div class="modal-dialog tracking-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <h3 class="modal-title"><i class="fa-solid fa-truck-fast text-primary"></i> RASTREAR PEDIDO</h3>
+        </div>
+        <button class="modal-close-btn" id="close-account-modal" aria-label="Cerrar ventana"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body tracking-modal-body">
+        
+        <!-- Formulario principal de rastreo -->
+        <form id="tracking-order-form" onsubmit="event.preventDefault(); trackOrderSimulated();">
+          <div class="form-group tracking-form-group">
+            <label class="form-label tracking-label" for="track-order-id">
+              Número de Guía o Pedido:
+            </label>
+            <div class="tracking-input-wrapper">
+              <i class="fa-solid fa-barcode tracking-input-icon"></i>
+              <input 
+                type="text" 
+                id="track-order-id" 
+                class="form-input tracking-input" 
+                placeholder="Ingresa tu número de guía o pedido (ej: MLD-2026-4821)" 
+                autocomplete="off"
+                required
+              >
+            </div>
+            <p class="tracking-discreet-note">
+              No requiere contraseña ni registro. Solo usamos tu número de guía para la actualización.
+            </p>
+          </div>
+
+          <button type="submit" class="btn btn-action btn-block btn-tracking-submit" id="btn-track-submit">
+            <i class="fa-solid fa-magnifying-glass"></i> Rastrear Pedido
+          </button>
+        </form>
+
+        <!-- Contenedor dinámico de resultados con barra de progreso -->
+        <div id="tracking-result-box" class="tracking-result-box" style="display: none;"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. LEGAL MODALS (Full compliance with Section C of MD doc.md) -->
+
+  <!-- Modal A: Privacidad y Tratamiento de Datos -->
+  <div class="modal-overlay" id="privacy-modal-overlay">
+    <div class="modal-dialog legal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title"><i class="fa-solid fa-shield-halved text-primary"></i> POLÍTICA DE PRIVACIDAD Y TRATAMIENTO DE DATOS</h3>
+        <button class="modal-close-btn" onclick="closeModals()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body legal-modal-body">
+        <div class="legal-content">
+          <h4>1. Responsable del Tratamiento</h4>
+          <p>En <strong>Dimension Lab</strong> (identificado comercialmente en esta plataforma), estamos comprometidos con la estricta protección y confidencialidad de la información personal de nuestros usuarios y clientes, en estricto cumplimiento con la legislación vigente de Protección de Datos Personales (Ley 1581 de 2012 y normativas complementarias aplicables).</p>
+
+          <h4>2. Datos que Recopilamos</h4>
+          <p>Para la debida prestación de los servicios de fabricación 3D, cotización y envío a domicilio, recopilamos únicamente los datos indispensables facilitados de manera voluntaria por el cliente:</p>
+          <ul>
+            <li><strong>Nombre y Apellidos:</strong> Para la identificación del destinatario de la orden y facturación.</li>
+            <li><strong>Dirección de entrega física y Ciudad:</strong> Utilizada única y exclusivamente para la logística, embalaje y despacho mediante transportadoras aliadas.</li>
+            <li><strong>Correo Electrónico:</strong> Para enviar las confirmaciones de compra, guías de tracking, renders previos y novedades (en caso de haberlo autorizado explícitamente).</li>
+            <li><strong>Número de Teléfono / WhatsApp:</strong> Para coordinar entregas, validar detalles técnicos de archivos 3D y notificaciones sobre el estado de la impresión.</li>
+          </ul>
+
+          <h4>3. Finalidad del Uso de la Información</h4>
+          <p>Dimension Lab declara bajo gravedad de juramento que los datos recogidos <strong>se usan única y exclusivamente para procesar, fabricar y enviar el pedido correspondiente</strong>, resolver inquietudes de servicio al cliente y brindar garantía técnica.</p>
+
+          <h4>4. Seguridad Bancaria y Pasarelas de Pago</h4>
+          <p>Dimension Lab <strong>no almacena ni tiene acceso en ningún momento a los datos confidenciales de tarjetas de crédito o credenciales bancarias</strong>. Todas las transacciones se efectúan de forma cifrada mediante protocolos de seguridad bancaria a través de pasarelas certificadas (Mercado Pago, Wompi, PayU, Bold).</p>
+
+          <h4>5. Derechos del Titular (Habeas Data)</h4>
+          <p>El titular de los datos podrá en cualquier momento ejercer sus derechos de conocimiento, actualización, rectificación y supresión de sus datos personales enviando una solicitud a <code>privacidad@dimensionlab3d.com</code>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal B: Términos y Condiciones del Servicio -->
+  <div class="modal-overlay" id="terms-modal-overlay">
+    <div class="modal-dialog legal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title"><i class="fa-solid fa-file-contract text-primary"></i> TÉRMINOS Y CONDICIONES DEL SERVICIO</h3>
+        <button class="modal-close-btn" onclick="closeModals()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body legal-modal-body">
+        <div class="legal-content">
+          <h4>1. Naturaleza del Servicio de Impresión 3D</h4>
+          <p>Los productos comercializados en Dimension Lab se elaboran mediante tecnologías de fabricación aditiva (FDM en PLA/PETG y Estereolitografía MSLA en Resina 8K). Debido a la naturaleza intrínseca del proceso capa por capa, pueden existir micropatrones característicos de la tecnología que son parte de la textura de la pieza y no constituyen defecto de fábrica.</p>
+
+          <h4>2. Tiempos de Fabricación e Impresión</h4>
+          <p><strong>Muy importante en impresión 3D:</strong> A diferencia de las tiendas que comercializan productos masivos de stock estático, en Dimension Lab garantizamos la frescura de los polímeros y la personalización. Cada pedido entra en cola de impresión en un plazo regular de <strong>24 a 72 horas hábiles</strong> según el volumen de la pieza, la resolución elegida y la cola de máquinas. En pedidos personalizados complejos o series grandes, se acordará un cronograma específico con el cliente.</p>
+
+          <h4>3. Tolerancias Dimensionales</h4>
+          <p>Nuestras impresoras cuentan con calibración de alta precisión (+/- 0.1 mm en FDM y +/- 0.025 mm en Resina fotopolimérica). Se recomienda a clientes que requieran encajes mecánicos solicitar una prueba de tolerancias antes de imprimir ensambles de gran escala.</p>
+
+          <h4>4. Cuidados y Uso de Materiales</h4>
+          <ul>
+            <li><strong>PLA:</strong> No debe exponerse a fuentes directas de calor superiores a 50°C (como dejarlo al interior de vehículos al sol).</li>
+            <li><strong>PETG:</strong> Apto para exteriores, contacto con agua y esfuerzos mecánicos moderados.</li>
+            <li><strong>Resina:</strong> Excelente para exhibición y detalles hiperfinos. Mantener alejado de golpes fuertes directos sobre aristas finas.</li>
+          </ul>
+
+          <h4>5. Garantías</h4>
+          <p>Ofrecemos garantía total contra fallas de adherencia entre capas o delaminación estructural durante 30 días calendario tras la recepción del producto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal C: Política de Envíos y Devoluciones -->
+  <div class="modal-overlay" id="shipping-modal-overlay">
+    <div class="modal-dialog legal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title"><i class="fa-solid fa-truck-moving text-primary"></i> POLÍTICA DE ENVÍOS Y DEVOLUCIONES</h3>
+        <button class="modal-close-btn" onclick="closeModals()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body legal-modal-body">
+        <div class="legal-content">
+          <h4>1. Cobertura de Envíos</h4>
+          <p>Realizamos envíos a todas las ciudades y municipios del país a través de empresas transportadoras de primer nivel (Servientrega, Envía, Coordinadora, Interrapidísimo). Una vez despachado el paquete, el cliente recibirá por correo electrónico y WhatsApp el número de guía con enlace de rastreo en vivo.</p>
+
+          <h4>2. Tiempos de Tránsito Postal</h4>
+          <ul>
+            <li>Ciudades principales: 1 a 3 días hábiles tras terminar la fabricación.</li>
+            <li>Destinos especiales o reexpediciones: 3 a 5 días hábiles.</li>
+          </ul>
+
+          <h4>3. Protocolo para Piezas Dañadas en Transporte</h4>
+          <p>En Dimension Lab embalamos cada pieza con <strong>caja rígida, acolchado de espuma y burbuja de aire antichoque</strong>. No obstante, si una pieza llega dañada por maltrato evidente de la empresa de envíos:</p>
+          <ol>
+            <li>Toma fotos claras del empaque y de la pieza dentro de las primeras 48 horas tras recibirla.</li>
+            <li>Escríbenos inmediatamente por WhatsApp o al correo <code>soporte@dimensionlab3d.com</code>.</li>
+            <li><strong>Garantía de Reposición Inmediata:</strong> Reimprimiremos tu pieza con prioridad de producción y te la enviaremos nuevamente <strong>sin ningún costo adicional</strong> para ti, o emitiremos un reembolso completo según tu preferencia.</li>
+          </ol>
+
+          <h4>4. Garantía de Satisfacción</h4>
+          <p>Si la pieza física recibida no cumple con las especificaciones técnicas o dimensionales acordadas en la orden, nos comprometemos a revisar el caso y reemplazar la pieza hasta asegurar tu plena satisfacción.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Box -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
